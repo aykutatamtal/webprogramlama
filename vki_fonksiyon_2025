@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <?php
+
+    
+   // $b=random(1.40,2);
+    //$k=random(40,140);
+
+    echo "Ahmet in değerleri :";
+    echo  Vki(1.90,89)."<br>";
+    echo "Sıla in değerleri :";
+    echo Vki(1.50,80)."<br>";
+    echo "Hasan in değerleri :";
+    echo Vki(1.75,78)."<br> :";
+    echo "Ege in değerleri :";
+    echo Vki(1.60,50)."<br>";
+    echo "Elif in değerleri :";
+    echo Vki(1.60,58)."<br>";
+    echo "Nesrin in değerleri :";
+    echo Vki(1.70,100)."<br>";
+    echo "Murat in değerleri :";
+    echo Vki(1.94,96)."<br>";
+    function Vki($boy,$kilo)
+    {
+        $vki = $kilo/($boy*$boy) ; //kilo bölü boyun karesi
+        $vki=round($vki,2); //virgülden sonra 2 hane 
+        echo "Vücut kitle indexiniz :         ";
+        if ($vki<=16)
+      echo $vki."ciddi derecede zayıfsın";
+        else if($vki<=18.5)
+      echo $vki." Zayıf";
+        else if ($vki<=25)
+      echo $vki."Sağlıklısın";
+        else if ($vki<=35)
+      echo $vki."Fazla Kilolusun";
+        else if($vki<=40)
+      echo $vki." Aşırı kilolusun";
+        else 
+      echo $vki."geçerli ayrıntıları girin";
+    }
+    ?>
+
+</body>
+</html>
